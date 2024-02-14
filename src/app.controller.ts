@@ -3,7 +3,7 @@ import { Controller, Get, Param, Post } from "@nestjs/common";
 @Controller("hello")
 export class HelloController{
 
-    @Post("/greeting")
+    @Get("/greeting")
     addHello():string{
         return "Hello World From Nandini";
     }
@@ -23,7 +23,7 @@ export class HelloController{
         return `Fibonnaci sequence is: ${result}`;
     }
     
-    
+
 
     //fibonaaci function
     private fibonacciSeq(n:number):number[]{
