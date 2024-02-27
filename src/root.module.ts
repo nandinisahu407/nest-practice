@@ -1,11 +1,13 @@
 import { Module } from '@nestjs/common';
 import { HelloController } from './app.controller';
+import { FibonacciService } from './fibonacci.service';
+import { FactorialService } from './factorial.service';
 
 
 @Module({
   imports: [],
   controllers: [HelloController],
-  providers: [],
+  providers: [FactorialService,FibonacciService],
 })
 export class RootModule {
   constructor(){
